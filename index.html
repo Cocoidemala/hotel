@@ -1,11 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>imagenes</title>
+    <title>Rockstar Games y GTA: La Leyenda Criminal</title>
+    <style>
+        /* Tipografía y Colores Base */
+        body {
+            font-family: 'Arial Black', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        /* Estilos de Tabla Principal */
+        .gta-container {
+            width: 70%; 
+            margin: 0 auto;
+            border: 5px solid #ff9900;
+            background-color: #333333;
+            border-collapse: collapse;
+        }
+
+        /* Centrar la tabla en la página */
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Estilo para todas las celdas (td) dentro del contenedor */
+        .gta-container td {
+            border: 2px solid #ff33cc;
+            padding: 10px;
+        }
+
+        /* Encabezado */
+        .gta-header td {
+            background-color: #000000;
+            color: #ff9900;
+            text-align: center;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+
+        .gta-header b {
+            font-size: 1.1em;
+        }
+
+        /* Menú Lateral */
+        .gta-menu {
+            background-color: #444444;
+            text-align: center; 
+        }
+
+        .gta-menu h3 {
+            color: #ff33cc;
+            text-transform: uppercase;
+            border-bottom: 2px solid #ff33cc;
+            padding-bottom: 5px;
+            margin-top: 0;
+            font-size: 1em;
+        }
+
+        /* Botones estilo retro/arcade como enlaces */
+        .gta-menu a.gta-button {
+            display: block;
+            width: 80%;
+            margin: 3px auto;
+            padding: 2px;
+            background-color: #ff9900;
+            color: #000000;
+            border: 3px solid #ff33cc;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            font-size: 0.75em;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .gta-menu a.gta-button:hover {
+            background-color: #ff33cc;
+            color: #000000;
+            border-color: #ff9900;
+        }
+
+        /* Contenido Principal */
+        .gta-content h2 {
+            color: #ff9900;
+            text-align: center;
+            font-size: 1.5em;
+            text-shadow: 2px 2px #ff33cc;
+            margin-bottom: 10px;
+        }
+        
+        /* Estilos para las dos casillas 50/50 */
+        .split-content td {
+            width: 50%;
+            vertical-align: top;
+            border: 2px solid #ff9900; 
+            padding: 15px;
+            background-color: #2b2b2b;
+        }
+
+
+        /* Sección de Medios (Imágenes/Videos) */
+        .gta-media-grid {
+            text-align: center;
+            background-color: #2a2a2a;
+            /* IMPORTANTE: Colapse para bordes pegados */
+            border-collapse: collapse; 
+        }
+
+        .gta-media-grid span {
+            display: block;
+            margin-top: 5px;
+            color: #00ff00;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        /* Estilos para imágenes y iframes */
+        .gta-media-grid img, .gta-media-grid iframe {
+            width: 200px; 
+            height: 120px;
+            border: 2px solid #ff9900; 
+            object-fit: cover; 
+        }
+
+        /* 🟢 ESTILOS PARA LA FILA 50/50 DE ABAJO (CONTENEDOR) */
+        .half-col-content-wrapper {
+            background-color: #000000;
+            /* Borde superior para separarlo de las imágenes/videos */
+            border-top: 2px solid #ff33cc; 
+            padding: 0; /* Quitar padding de la celda externa */
+        }
+        
+        /* 🟢 ESTILOS PARA LAS CELDAS INTERNAS 50/50 */
+        .half-col-content-inner td {
+            width: 50%; 
+            background-color: #000000; 
+            color: #cccccc;
+            font-weight: normal;
+            font-size: 0.8em;
+            padding: 10px;
+            vertical-align: top;
+            /* 💡 Borde central para dividir visualmente */
+            border: 1px solid #ff9900; 
+            border-top: none; /* No queremos borde superior extra */
+            border-bottom: none; /* No queremos borde inferior extra */
+        }
+        .half-col-content-inner td:first-child {
+            border-left: none; /* Quitamos el borde izquierdo de la primera celda */
+        }
+        .half-col-content-inner td:last-child {
+            border-right: none; /* Quitamos el borde derecho de la última celda */
+        }
+
+
+        /* Pie de Página */
+        .gta-footer {
+            background-color: #000000;
+            font-size: 0.9em;
+        }
+
+        .gta-footer ul {
+            list-style: none;
+            padding: 0;
+            color: #ff9900;
+            font-weight: bold;
+        }
+
+        .gta-footer p {
+            color: #cccccc;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            /* Las dos celdas 50/50 también se apilan en móvil */
+            .half-col-content-inner td {
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid #ff9900;
+                border-top: 1px solid #ff9900;
+            }
+        }
+    </style>
 </head>
 <body>
-    klk bro
+
+    <table class="gta-container" cellspacing="0" cellpadding="10" align="center">
+        <tr class="gta-header">
+            <td colspan="1" valign="top"> 
+                <table width="100%" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td><b>RED DEAD</b><br>REDEMPTION</td>
+                        <td><b>GRAND THEFT AUTO</b><br>ONLINE</td>
+                        <td><b>MAX PAYNE</b><br>LEGADO</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td width="25%" valign="top" class="gta-menu">
+                            <h3>Franquicia GTA</h3>
+                            <table width="100%" cellspacing="0" cellpadding="5">
+                                <tr><td><a href="https://www.rockstargames.com/gta-trilogy" class="gta-button">Vice City 🌅</a></td></tr>
+                                <tr><td><a href="https://www.rockstargames.com/gta-trilogy" class="gta-button">San Andreas 🌴</a></td></tr>
+                                <tr><td><a href="https://www.rockstargames.com/gta-v" class="gta-button">GTA V 🏙️</a></td></tr>
+                                <tr><td><a href="https://www.rockstargames.com/games/grandtheftauto6" class="gta-button">Anuncios 📢</a></td></tr>
+                            </table>
+                        </td>
+
+                        <td width="75%" class="gta-content">
+                            <h2>🔫 Historia Visual de Grand Theft Auto</h2>
+
+                            <table width="100%" cellspacing="0" cellpadding="0" align="center" class="gta-media-grid">
+                                <tr>
+                                    <td>
+                                        <img src="images.webp" alt="GTA San Andreas">
+                                        <br>
+                                        <span>San Andreas: Los Santos</span>
+                                    </td>
+                                    <td>
+                                        <img src="100-completion.jpg" alt="GTA Vice City">
+                                        <br>
+                                        <span>Vice City: Años 80</span>
+                                    </td>
+                                    <td>
+                                        <iframe src="https://www.youtube.com/embed/QkkoHAzjnUs" title="Grand Theft Auto Online Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <br>
+                                        <span>GTA Online - Tráiler</span>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td colspan="3" class="half-col-content-wrapper">
+                                        <table width="100%" cellspacing="0" cellpadding="0" class="half-col-content-inner">
+                                            <tr>
+                                                <td style="border-right: 1px solid #ff33cc;">
+                                                    <h3>🏆 Logros y Trofeos</h3>
+                                                    <p>Completa el 100% de las misiones principales y secundarias para obtener el platino en cada entrega.</p>
+                                                </td>
+                                                <td style="border-left: 1px solid #ff33cc;">
+                                                    <h3>✨ Trucos Clásicos</h3>
+                                                    <p>Recuerda los códigos míticos de munición infinita, invencibilidad y tanques que definieron una generación.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        </td>
+                                </tr>
+                                </table>
+                             </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr class="gta-footer">
+            <td colspan="2"> 
+                <table width="100%" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td width="50%">
+                            <ul><li>Motor RAGE</li></ul>
+                            <p>Motor gráfico propietario de Rockstar, clave para sus grandes mundos abiertos.</p>
+                        </td>
+                        <td width="50%">
+                            <ul><li>Sátira Social</li></ul>
+                            <p>Uso de humor negro para criticar la cultura y la sociedad americana en los juegos.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>
